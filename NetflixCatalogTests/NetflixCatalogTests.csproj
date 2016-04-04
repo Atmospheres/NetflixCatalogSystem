@@ -58,7 +58,7 @@
     <Compile Include="ViewTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NetfloxCatalogSystem\NetflixCatalogSystem.csproj">
+    <ProjectReference Include="..\NetflixCatalogSystem\NetflixCatalogSystem.csproj">
       <Project>{A47A551A-F98F-483D-9685-D61A3E90D7E5}</Project>
       <Name>NetflixCatalogSystem</Name>
     </ProjectReference>

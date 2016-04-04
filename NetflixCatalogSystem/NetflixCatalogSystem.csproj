@@ -7,8 +7,8 @@
     <ProjectGuid>{A47A551A-F98F-483D-9685-D61A3E90D7E5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NetfloxCatalogSystem</RootNamespace>
-    <AssemblyName>NetfloxCatalogSystem</AssemblyName>
+    <RootNamespace>NetflixCatalogSystem</RootNamespace>
+    <AssemblyName>NetflixCatalogSystem</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

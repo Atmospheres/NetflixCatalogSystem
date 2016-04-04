@@ -10,7 +10,7 @@ namespace NetflixCatalogSystem
     {
         
         
-        string name;
+        public string name;
         protected double? rating;
         public virtual double? Rating
         {

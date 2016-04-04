@@ -24,7 +24,14 @@ namespace NetflixCatalogSystem
                         ratingCount ++; 
                     }
                 }
-                rating = (rating/ratingCount);
+                if (rating != 0)
+                {
+                    rating = (rating / ratingCount);
+                }
+                else if (rating == 0)
+                {
+                    rating = null;
+                }
                 return rating;
             }
         }

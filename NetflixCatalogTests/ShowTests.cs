@@ -89,6 +89,40 @@ namespace NetflixCatalogSystem.Tests
         [TestMethod()]
         public void RatingTestTwo()
         {
+            //arange
+            Show show = new Show();
+            double? nullDouble = null;
+            Episode episodeOne = new Episode("Episode One", nullDouble, 300);
+            Episode episodeTwo = new Episode("Episode Two", 3, 300);
+            Episode episodeThree = new Episode("Episode Three", 7, 300);
+            show.episodes.Add(episodeOne);
+            show.episodes.Add(episodeTwo);
+            show.episodes.Add(episodeThree);
+            double total = 10;
+            double divideBy = 2;
+            double? ratingCompare = (total / divideBy);
+            //act
+            double? ratingReturn = show.Rating;
+            //assert
+            Assert.AreEqual(ratingCompare, ratingReturn);
+        }
+        [TestMethod()]
+        public void RatingTestThree()
+        {
+            //arange
+            Show show = new Show();
+            double? nullDouble = null;
+            Episode episodeOne = new Episode("Episode One", nullDouble, 300);
+            Episode episodeTwo = new Episode("Episode Two", nullDouble, 300);
+            Episode episodeThree = new Episode("Episode Three", nullDouble, 300);
+            show.episodes.Add(episodeOne);
+            show.episodes.Add(episodeTwo);
+            show.episodes.Add(episodeThree);
+
+            //act
+            double? ratingReturn = show.Rating;
+            //assert
+            Assert.AreEqual(null, ratingReturn);
         }
     }
 }
